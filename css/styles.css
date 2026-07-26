@@ -121,7 +121,14 @@ main > section.contenedor {
 
 main > .contenedor + .contenedor,
 main > section + section {
-  padding-top: 0;
+  padding-top: var(--espacio-md);
+}
+
+@media (min-width: 1024px) {
+  main > .contenedor + .contenedor,
+  main > section + section {
+    padding-top: var(--espacio-lg);
+  }
 }
 
 .grid-dos-columnas {
