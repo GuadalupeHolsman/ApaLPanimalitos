@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentación del sistema de diseño — APA La Plata</title>
+<meta name="description" content="Sistema de diseño de APA La Plata: paleta de colores, escala tipográfica, escala de espaciado, inventario de componentes y estructura de layout.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+</head>
+<body>
+<div class="pagina">
+
+<header class="encabezado-principal">
+  <div class="contenedor encabezado-principal__barra">
+    <a href="index.html" class="marca">
+      <svg class="marca__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/>
+      </svg>
+      <span class="marca__texto">
+        <span class="marca__nombre">APA La Plata</span>
+        <span class="marca__lugar">Asociación Protectora de Animales</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-principal">
+      <svg class="nav-toggle__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="4" y1="7" x2="20" y2="7"></line>
+        <line x1="4" y1="12" x2="20" y2="12"></line>
+        <line x1="4" y1="17" x2="20" y2="17"></line>
+      </svg>
+      Menú
+    </button>
+
+    <nav class="nav-principal" id="nav-principal" aria-label="Navegación principal">
+      <ul class="nav-principal__lista">
+        <li><a class="nav-principal__enlace" href="index.html">Inicio</a></li>
+        <li><a class="nav-principal__enlace" href="adopcion.html">Adoptar</a></li>
+        <li><a class="nav-principal__enlace" href="index.html#sobre">Sobre APA</a></li>
+        <li><a class="nav-principal__enlace" href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="nav-principal__redes">
+        <a class="icono-red" href="https://www.instagram.com/apa.perritosenadopcion/" target="_blank" rel="noopener" aria-label="APA La Plata en Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle></svg>
+        </a>
+        <a class="icono-red" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="APA La Plata en Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9.6V11h2.7l-.4 3H14v7h-3v-7H8.5v-3H11V9.4C11 7 12.6 6 14.7 6H17v3h-2.4c-.4 0-.6.2-.6.6z"></path></svg>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="contenedor">
+    <div class="seccion__encabezado reveal">
+      <p class="seccion__kicker">Etapa 4 — Documentación</p>
+      <h1>Sistema de diseño</h1>
+      <p>Esta página documenta las decisiones definidas en la Etapa 2 y su implementación como código en la Etapa 3: variables de diseño, escalas, componentes y estructura de layout. Todo lo que se ve en el resto del sitio se construye a partir de estos tokens.</p>
+    </div>
+
+    <!-- Colores -->
+    <section aria-labelledby="titulo-colores" style="margin-bottom: var(--espacio-lg);">
+      <h2 id="titulo-colores">Paleta de colores</h2>
+      <p>Declarados como custom properties en <code>:root</code>. Ningún color se usa hardcodeado fuera de esta declaración.</p>
+      <div class="grilla-muestras">
+        <div class="muestra-color" style="background-color: var(--color-primario); color: var(--color-texto);">
+          --color-primario<br>#E8B23A
+        </div>
+        <div class="muestra-color" style="background-color: var(--color-secundario); color: var(--color-texto-inverso);">
+          --color-secundario<br>#2F5D50
+        </div>
+        <div class="muestra-color" style="background-color: var(--color-texto); color: var(--color-texto-inverso);">
+          --color-texto<br>#2A2622
+        </div>
+        <div class="muestra-color" style="background-color: var(--color-texto-suave); color: var(--color-texto-inverso);">
+          --color-texto-suave<br>#6B655C
+        </div>
+        <div class="muestra-color" style="background-color: var(--color-fondo); color: var(--color-texto);">
+          --color-fondo<br>#FBF6EC
+        </div>
+      </div>
+    </section>
+
+    <!-- Tipografía -->
+    <section aria-labelledby="titulo-tipografia" style="margin-bottom: var(--espacio-lg);">
+      <h2 id="titulo-tipografia">Escala tipográfica</h2>
+      <p>Familia única: sans-serif humanista (Raleway), para evitar la ambigüedad detectada en el análisis de referencia de la Etapa 1.</p>
+
+      <div class="muestra-tipografia">
+        <span style="font-size: var(--tipo-display); font-weight: 800;">Título principal</span>
+        <small>--tipo-display · 2.25rem / 36px · H1 de cada página</small>
+      </div>
+      <div class="muestra-tipografia">
+        <span style="font-size: var(--tipo-grande); font-weight: 700;">Subtítulo de sección</span>
+        <small>--tipo-grande · 1.375rem / 22px · nombre del animal en tarjeta</small>
+      </div>
+      <div class="muestra-tipografia">
+        <span style="font-size: var(--tipo-base);">Cuerpo de texto y formularios</span>
+        <small>--tipo-base · 1rem / 16px</small>
+      </div>
+      <div class="muestra-tipografia">
+        <span style="font-size: var(--tipo-pequeno);">Metadatos: edad, fecha, etiquetas</span>
+        <small>--tipo-pequeno · 0.875rem / 14px</small>
+      </div>
+    </section>
+
+    <!-- Espaciado -->
+    <section aria-labelledby="titulo-espaciado" style="margin-bottom: var(--espacio-lg);">
+      <h2 id="titulo-espaciado">Escala de espaciado</h2>
+      <div class="muestra-espaciado">
+        <span class="muestra-espaciado__etiqueta">--espacio-xs (8px)</span>
+        <div class="muestra-espaciado__barra" style="width: var(--espacio-xs);"></div>
+      </div>
+      <div class="muestra-espaciado">
+        <span class="muestra-espaciado__etiqueta">--espacio-sm (16px)</span>
+        <div class="muestra-espaciado__barra" style="width: var(--espacio-sm);"></div>
+      </div>
+      <div class="muestra-espaciado">
+        <span class="muestra-espaciado__etiqueta">--espacio-md (32px)</span>
+        <div class="muestra-espaciado__barra" style="width: var(--espacio-md);"></div>
+      </div>
+      <div class="muestra-espaciado">
+        <span class="muestra-espaciado__etiqueta">--espacio-lg (64px)</span>
+        <div class="muestra-espaciado__barra" style="width: var(--espacio-lg);"></div>
+      </div>
+    </section>
+
+    <!-- Componentes -->
+    <section aria-labelledby="titulo-componentes" style="margin-bottom: var(--espacio-lg);">
+      <h2 id="titulo-componentes">Componentes clave</h2>
+      <div class="grilla-componentes">
+        <div class="muestra-componente">
+          <p class="muestra-componente__titulo">Átomo · .btn-primario / .btn-secundario</p>
+          <div style="display:flex; gap: var(--espacio-xs); flex-wrap: wrap;">
+            <span class="btn btn-primario">Quiero adoptar</span>
+            <span class="btn btn-secundario">Ver más</span>
+          </div>
+        </div>
+        <div class="muestra-componente">
+          <p class="muestra-componente__titulo">Átomo · .etiqueta-estado</p>
+          <div style="display:flex; gap: var(--espacio-xs); flex-wrap: wrap;">
+            <span class="etiqueta-estado etiqueta-estado_disponible">Disponible</span>
+            <span class="etiqueta-estado etiqueta-estado_enproceso">En proceso</span>
+          </div>
+        </div>
+        <div class="muestra-componente">
+          <p class="muestra-componente__titulo">Átomo · .campo-texto</p>
+          <input class="campo-texto" type="text" placeholder="Nombre y apellido" style="width:100%;">
+        </div>
+        <div class="muestra-componente">
+          <p class="muestra-componente__titulo">Molécula · .dato-institucional</p>
+          <div class="dato-institucional" style="width:100%;">
+            <span class="dato-institucional__numero">43</span>
+            <span class="dato-institucional__etiqueta">años de trabajo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nomenclatura -->
+    <section aria-labelledby="titulo-nomenclatura" style="margin-bottom: var(--espacio-lg);">
+      <h2 id="titulo-nomenclatura">Inventario de componentes (Diseño Atómico)</h2>
+      <table class="tabla-info">
+        <thead>
+          <tr><th>Nivel</th><th>Componente</th><th>Clase CSS</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Átomo</td><td>Botón primario</td><td>.btn-primario</td></tr>
+          <tr><td>Átomo</td><td>Botón secundario</td><td>.btn-secundario</td></tr>
+          <tr><td>Átomo</td><td>Etiqueta de estado</td><td>.etiqueta-estado_disponible / .etiqueta-estado_enproceso</td></tr>
+          <tr><td>Átomo</td><td>Campo de texto</td><td>.campo-texto</td></tr>
+          <tr><td>Átomo</td><td>Ícono de red social</td><td>.icono-red</td></tr>
+          <tr><td>Átomo</td><td>Imagen de animal</td><td>.imagen-animal</td></tr>
+          <tr><td>Molécula</td><td>Tarjeta de animal</td><td>.tarjeta-animal</td></tr>
+          <tr><td>Molécula</td><td>Formulario de contacto</td><td>.formulario-contacto</td></tr>
+          <tr><td>Molécula</td><td>Barra de filtros</td><td>.barra-filtros</td></tr>
+          <tr><td>Molécula</td><td>Dato institucional</td><td>.dato-institucional</td></tr>
+          <tr><td>Organismo</td><td>Encabezado de navegación</td><td>.encabezado-principal</td></tr>
+          <tr><td>Organismo</td><td>Hero de inicio</td><td>.hero-inicio</td></tr>
+          <tr><td>Organismo</td><td>Grilla de adopción</td><td>.grilla-adopcion</td></tr>
+          <tr><td>Organismo</td><td>Sección Cómo adoptar</td><td>.pasos</td></tr>
+          <tr><td>Organismo</td><td>Pie de página</td><td>.pie-pagina</td></tr>
+          <tr><td>Plantilla</td><td>Inicio / Catálogo / Detalle / Contacto</td><td>index.html · adopcion.html · animal.html · contacto.html</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Layout y responsive -->
+    <section aria-labelledby="titulo-layout" style="margin-bottom: var(--espacio-lg);">
+      <h2 id="titulo-layout">Estructura de layout y responsive</h2>
+      <table class="tabla-info">
+        <thead>
+          <tr><th>Breakpoint</th><th>Ancho</th><th>Comportamiento principal</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Base (mobile)</td><td>&lt; 600px</td><td>1 columna en GrillaAdopcion. Menú colapsado en ícono de hamburguesa. BarraFiltros colapsada (elemento <code>&lt;details&gt;</code>).</td></tr>
+          <tr><td>Tablet</td><td>&ge; 600px</td><td>GrillaAdopcion pasa a 2 columnas. Menú se expande horizontalmente.</td></tr>
+          <tr><td>Escritorio</td><td>&ge; 1024px</td><td>GrillaAdopcion pasa a 3 columnas. BarraFiltros visible de forma permanente en columna lateral (3/12).</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top: var(--espacio-sm);">El layout macro de cada página se resuelve con <strong>CSS Grid</strong> (<code>.pagina</code>, <code>.grilla-adopcion-layout</code>, <code>.grilla-adopcion</code>, <code>.pie-pagina__grid</code>). Flexbox se reserva para microcomposición: alineación de la barra de navegación, orden de elementos dentro de una tarjeta y agrupación de botones.</p>
+      <p><strong>Container queries:</strong> <code>.tarjeta-animal</code> declara <code>container-type: inline-size</code>. Cuando su contenedor supera 420px de ancho (por ejemplo, en la sección de destacados del inicio, con 2 columnas anchas), la imagen se ubica al costado del contenido; en la grilla de adopción de 3 columnas, donde cada tarjeta es más angosta, la imagen permanece arriba — independientemente del ancho del viewport.</p>
+    </section>
+
+    <!-- Antecedente -->
+    <section aria-labelledby="titulo-antecedente">
+      <h2 id="titulo-antecedente">Antecedente: inconsistencias evitadas</h2>
+      <p>El análisis de referencia de la Etapa 1 detectó tres problemas que este sistema corrige explícitamente:</p>
+      <ul class="lista-simple">
+        <li>Grises de texto sin documentar → acá solo existen <code>--color-texto</code> y <code>--color-texto-suave</code>.</li>
+        <li>Dos familias tipográficas combinadas sin escala clara → una sola familia (Raleway) con cuatro tamaños semánticos.</li>
+        <li>Tres variantes de botón sin razón funcional → un sistema único de dos botones (<code>.btn-primario</code>, <code>.btn-secundario</code>).</li>
+      </ul>
+    </section>
+  </section>
+</main>
+
+<footer class="pie-pagina">
+  <div class="contenedor">
+    <div class="pie-pagina__grid">
+      <div>
+        <h2 class="pie-pagina__titulo">APA La Plata</h2>
+        <p>Asociación civil sin fines de lucro. Refugio de perros en La Plata, cerca de la Selva Marginal de Punta Lara. Desde 1982, sin ayuda estatal.</p>
+      </div>
+      <div>
+        <h2 class="pie-pagina__titulo">Navegación</h2>
+        <ul class="pie-pagina__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="adopcion.html">Adoptar</a></li>
+          <li><a href="index.html#sobre">Sobre APA</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="sistema.html" aria-current="page">Documentación del sistema de diseño</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="pie-pagina__titulo">Seguinos</h2>
+        <p>Publicamos perros en adopción y novedades del refugio todos los días.</p>
+        <div class="pie-pagina__redes">
+          <a class="icono-red" href="https://www.instagram.com/apa.perritosenadopcion/" target="_blank" rel="noopener" aria-label="APA La Plata en Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle></svg>
+          </a>
+          <a class="icono-red" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="APA La Plata en Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9.6V11h2.7l-.4 3H14v7h-3v-7H8.5v-3H11V9.4C11 7 12.6 6 14.7 6H17v3h-2.4c-.4 0-.6.2-.6.6z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="pie-pagina__base">
+      <span>© 2026 APA La Plata. Asociación civil sin fines de lucro, desde 1982.</span>
+      <span>Sitio desarrollado como Trabajo Práctico Final — Guadalupe Holsman.</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

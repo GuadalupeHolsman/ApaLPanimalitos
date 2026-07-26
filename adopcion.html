@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adoptá — APA La Plata</title>
+<meta name="description" content="Catálogo de perros disponibles para adopción en APA La Plata. Filtrá por tamaño y edad para encontrar tu compañero.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+</head>
+<body>
+<div class="pagina">
+
+<header class="encabezado-principal">
+  <div class="contenedor encabezado-principal__barra">
+    <a href="index.html" class="marca">
+      <svg class="marca__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/>
+      </svg>
+      <span class="marca__texto">
+        <span class="marca__nombre">APA La Plata</span>
+        <span class="marca__lugar">Asociación Protectora de Animales</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-principal">
+      <svg class="nav-toggle__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="4" y1="7" x2="20" y2="7"></line>
+        <line x1="4" y1="12" x2="20" y2="12"></line>
+        <line x1="4" y1="17" x2="20" y2="17"></line>
+      </svg>
+      Menú
+    </button>
+
+    <nav class="nav-principal" id="nav-principal" aria-label="Navegación principal">
+      <ul class="nav-principal__lista">
+        <li><a class="nav-principal__enlace" href="index.html">Inicio</a></li>
+        <li><a class="nav-principal__enlace" href="adopcion.html" aria-current="page">Adoptar</a></li>
+        <li><a class="nav-principal__enlace" href="index.html#sobre">Sobre APA</a></li>
+        <li><a class="nav-principal__enlace" href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="nav-principal__redes">
+        <a class="icono-red" href="https://www.instagram.com/apa.perritosenadopcion/" target="_blank" rel="noopener" aria-label="APA La Plata en Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle></svg>
+        </a>
+        <a class="icono-red" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="APA La Plata en Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9.6V11h2.7l-.4 3H14v7h-3v-7H8.5v-3H11V9.4C11 7 12.6 6 14.7 6H17v3h-2.4c-.4 0-.6.2-.6.6z"></path></svg>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="contenedor">
+    <div class="seccion__encabezado reveal">
+      <p class="seccion__kicker">Catálogo de adopción</p>
+      <h1>Perros disponibles</h1>
+      <p>Todos fueron rescatados de situación de calle, abandono o maltrato y ya están evaluados por nuestro equipo. Filtrá por tamaño y edad para encontrar tu compañero.</p>
+    </div>
+
+    <div class="grilla-adopcion-layout">
+      <aside aria-label="Filtros de búsqueda">
+        <details class="barra-filtros" id="barra-filtros" open>
+          <summary>Filtrar resultados</summary>
+
+          <div class="barra-filtros__grupo">
+            <p class="barra-filtros__titulo">Tamaño</p>
+            <label class="barra-filtros__opcion"><input type="checkbox" name="tamano" value="pequeno"> Pequeño</label>
+            <label class="barra-filtros__opcion"><input type="checkbox" name="tamano" value="mediano"> Mediano</label>
+            <label class="barra-filtros__opcion"><input type="checkbox" name="tamano" value="grande"> Grande</label>
+          </div>
+
+          <div class="barra-filtros__grupo">
+            <p class="barra-filtros__titulo">Edad</p>
+            <label class="barra-filtros__opcion"><input type="checkbox" name="edad" value="cachorro"> Cachorro</label>
+            <label class="barra-filtros__opcion"><input type="checkbox" name="edad" value="adulto"> Adulto</label>
+            <label class="barra-filtros__opcion"><input type="checkbox" name="edad" value="senior"> Senior</label>
+          </div>
+
+          <button type="button" class="barra-filtros__limpiar" id="limpiar-filtros">Limpiar filtros</button>
+        </details>
+      </aside>
+
+      <div class="grilla-adopcion" id="grilla-adopcion">
+
+        <article class="tarjeta-animal" data-tamano="mediano" data-edad="adulto">
+          <div class="tarjeta-animal__layout">
+            <div class="tarjeta-animal__imagen-envoltorio">
+              <div class="imagen-animal">
+                <img src="img/perros/pancho-1.jpg" alt="Pancho, perro tricolor de orejas largas, mirando a cámara">
+              </div>
+            </div>
+            <div class="tarjeta-animal__contenido">
+              <div class="tarjeta-animal__encabezado">
+                <h2 class="tarjeta-animal__nombre">Pancho</h2>
+                <span class="etiqueta-estado etiqueta-estado_disponible">Disponible</span>
+              </div>
+              <ul class="tarjeta-animal__meta"><li>Adulto</li><li>Mediano</li></ul>
+              <p class="tarjeta-animal__descripcion">Sociable y activo, le encanta que lo saquen a pasear por el refugio.</p>
+              <div class="tarjeta-animal__acciones">
+                <a href="animal.html" class="btn btn-primario">Quiero adoptar</a>
+                <a href="animal.html" class="btn btn-secundario">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta-animal" data-tamano="mediano" data-edad="cachorro">
+          <div class="tarjeta-animal__layout">
+            <div class="tarjeta-animal__imagen-envoltorio">
+              <div class="imagen-animal imagen-animal--paleta-2">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/></svg>
+              </div>
+            </div>
+            <div class="tarjeta-animal__contenido">
+              <div class="tarjeta-animal__encabezado">
+                <h2 class="tarjeta-animal__nombre">Luna</h2>
+                <span class="etiqueta-estado etiqueta-estado_disponible">Disponible</span>
+              </div>
+              <ul class="tarjeta-animal__meta"><li>Cachorra</li><li>Mediana</li></ul>
+              <p class="tarjeta-animal__descripcion">Juguetona y curiosa, se lleva bien con otros perros.</p>
+              <div class="tarjeta-animal__acciones">
+                <a href="animal.html" class="btn btn-primario">Quiero adoptar</a>
+                <a href="animal.html" class="btn btn-secundario">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta-animal" data-tamano="mediano" data-edad="adulto">
+          <div class="tarjeta-animal__layout">
+            <div class="tarjeta-animal__imagen-envoltorio">
+              <div class="imagen-animal">
+                <img src="img/perros/rufus.jpg" alt="Rufus, perro de pelo largo y desprolijo asomándose por la puerta de su caseta">
+              </div>
+            </div>
+            <div class="tarjeta-animal__contenido">
+              <div class="tarjeta-animal__encabezado">
+                <h2 class="tarjeta-animal__nombre">Rufus</h2>
+                <span class="etiqueta-estado etiqueta-estado_enproceso">En proceso</span>
+              </div>
+              <ul class="tarjeta-animal__meta"><li>Adulto</li><li>Mediano</li></ul>
+              <p class="tarjeta-animal__descripcion">Recién llegado al refugio, todavía tímido pero muy dócil. Está en proceso de adaptación.</p>
+              <div class="tarjeta-animal__acciones">
+                <a href="animal.html" class="btn btn-primario">Quiero adoptar</a>
+                <a href="animal.html" class="btn btn-secundario">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta-animal" data-tamano="mediano" data-edad="adulto">
+          <div class="tarjeta-animal__layout">
+            <div class="tarjeta-animal__imagen-envoltorio">
+              <div class="imagen-animal">
+                <img src="img/perros/india.jpg" alt="India, perra color canela con arnés rosa">
+              </div>
+            </div>
+            <div class="tarjeta-animal__contenido">
+              <div class="tarjeta-animal__encabezado">
+                <h2 class="tarjeta-animal__nombre">India</h2>
+                <span class="etiqueta-estado etiqueta-estado_disponible">Disponible</span>
+              </div>
+              <ul class="tarjeta-animal__meta"><li>Adulta</li><li>Mediana</li></ul>
+              <p class="tarjeta-animal__descripcion">Tranquila y observadora, siempre atenta a lo que pasa alrededor. Se lleva bien con las visitas.</p>
+              <div class="tarjeta-animal__acciones">
+                <a href="animal.html" class="btn btn-primario">Quiero adoptar</a>
+                <a href="animal.html" class="btn btn-secundario">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta-animal" data-tamano="grande" data-edad="cachorro">
+          <div class="tarjeta-animal__layout">
+            <div class="tarjeta-animal__imagen-envoltorio">
+              <div class="imagen-animal imagen-animal--paleta-2">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/></svg>
+              </div>
+            </div>
+            <div class="tarjeta-animal__contenido">
+              <div class="tarjeta-animal__encabezado">
+                <h2 class="tarjeta-animal__nombre">Simón</h2>
+                <span class="etiqueta-estado etiqueta-estado_disponible">Disponible</span>
+              </div>
+              <ul class="tarjeta-animal__meta"><li>Cachorro</li><li>Grande</li></ul>
+              <p class="tarjeta-animal__descripcion">Torpe y encimoso, todavía está aprendiendo. Necesita paciencia.</p>
+              <div class="tarjeta-animal__acciones">
+                <a href="animal.html" class="btn btn-primario">Quiero adoptar</a>
+                <a href="animal.html" class="btn btn-secundario">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta-animal" data-tamano="pequeno" data-edad="adulto">
+          <div class="tarjeta-animal__layout">
+            <div class="tarjeta-animal__imagen-envoltorio">
+              <div class="imagen-animal imagen-animal--paleta-3">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/></svg>
+              </div>
+            </div>
+            <div class="tarjeta-animal__contenido">
+              <div class="tarjeta-animal__encabezado">
+                <h2 class="tarjeta-animal__nombre">Coco</h2>
+                <span class="etiqueta-estado etiqueta-estado_enproceso">En proceso</span>
+              </div>
+              <ul class="tarjeta-animal__meta"><li>Adulto</li><li>Pequeño</li></ul>
+              <p class="tarjeta-animal__descripcion">Muy sociable, se adapta bien a departamentos.</p>
+              <div class="tarjeta-animal__acciones">
+                <a href="animal.html" class="btn btn-primario">Quiero adoptar</a>
+                <a href="animal.html" class="btn btn-secundario">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta-animal" data-tamano="grande" data-edad="senior">
+          <div class="tarjeta-animal__layout">
+            <div class="tarjeta-animal__imagen-envoltorio">
+              <div class="imagen-animal imagen-animal--paleta-1">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/></svg>
+              </div>
+            </div>
+            <div class="tarjeta-animal__contenido">
+              <div class="tarjeta-animal__encabezado">
+                <h2 class="tarjeta-animal__nombre">Bruna</h2>
+                <span class="etiqueta-estado etiqueta-estado_disponible">Disponible</span>
+              </div>
+              <ul class="tarjeta-animal__meta"><li>Senior</li><li>Grande</li></ul>
+              <p class="tarjeta-animal__descripcion">Serena y silenciosa, perfecta para acompañar el día a día.</p>
+              <div class="tarjeta-animal__acciones">
+                <a href="animal.html" class="btn btn-primario">Quiero adoptar</a>
+                <a href="animal.html" class="btn btn-secundario">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta-animal" data-tamano="mediano" data-edad="cachorro">
+          <div class="tarjeta-animal__layout">
+            <div class="tarjeta-animal__imagen-envoltorio">
+              <div class="imagen-animal imagen-animal--paleta-2">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/></svg>
+              </div>
+            </div>
+            <div class="tarjeta-animal__contenido">
+              <div class="tarjeta-animal__encabezado">
+                <h2 class="tarjeta-animal__nombre">Milo</h2>
+                <span class="etiqueta-estado etiqueta-estado_enproceso">En proceso</span>
+              </div>
+              <ul class="tarjeta-animal__meta"><li>Cachorro</li><li>Mediano</li></ul>
+              <p class="tarjeta-animal__descripcion">Curioso y activo, ya está aprendiendo a caminar con correa.</p>
+              <div class="tarjeta-animal__acciones">
+                <a href="animal.html" class="btn btn-primario">Quiero adoptar</a>
+                <a href="animal.html" class="btn btn-secundario">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie-pagina">
+  <div class="contenedor">
+    <div class="pie-pagina__grid">
+      <div>
+        <h2 class="pie-pagina__titulo">APA La Plata</h2>
+        <p>Asociación civil sin fines de lucro. Refugio de perros en La Plata, cerca de la Selva Marginal de Punta Lara. Desde 1982, sin ayuda estatal.</p>
+      </div>
+      <div>
+        <h2 class="pie-pagina__titulo">Navegación</h2>
+        <ul class="pie-pagina__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="adopcion.html">Adoptar</a></li>
+          <li><a href="index.html#sobre">Sobre APA</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="sistema.html">Documentación del sistema de diseño</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="pie-pagina__titulo">Seguinos</h2>
+        <p>Publicamos perros en adopción y novedades del refugio todos los días.</p>
+        <div class="pie-pagina__redes">
+          <a class="icono-red" href="https://www.instagram.com/apa.perritosenadopcion/" target="_blank" rel="noopener" aria-label="APA La Plata en Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle></svg>
+          </a>
+          <a class="icono-red" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="APA La Plata en Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9.6V11h2.7l-.4 3H14v7h-3v-7H8.5v-3H11V9.4C11 7 12.6 6 14.7 6H17v3h-2.4c-.4 0-.6.2-.6.6z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="pie-pagina__base">
+      <span>© 2026 APA La Plata. Asociación civil sin fines de lucro, desde 1982.</span>
+      <span>Sitio desarrollado como Trabajo Práctico Final — Guadalupe Holsman.</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
