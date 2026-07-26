@@ -116,18 +116,18 @@ code {
 
 main > .contenedor,
 main > section.contenedor {
-  padding-block: var(--espacio-lg);
+  padding-block: calc(var(--espacio-lg) * 1.5);
 }
 
 main > .contenedor + .contenedor,
 main > section + section {
-  padding-top: var(--espacio-md);
+  padding-top: var(--espacio-lg);
 }
 
 @media (min-width: 1024px) {
   main > .contenedor + .contenedor,
   main > section + section {
-    padding-top: var(--espacio-lg);
+    padding-top: calc(var(--espacio-lg) * 2);
   }
 }
 
