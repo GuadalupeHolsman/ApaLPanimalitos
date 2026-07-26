@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APA La Plata — Adoptá, ayudá, sumate</title>
+<meta name="description" content="APA La Plata rescata, cuida y busca hogar para perros en situación de calle desde 1982. Conocé a los perros disponibles para adopción y cómo colaborar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+</head>
+<body>
+<div class="pagina">
+
+<header class="encabezado-principal">
+  <div class="contenedor encabezado-principal__barra">
+    <a href="index.html" class="marca">
+      <svg class="marca__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/>
+      </svg>
+      <span class="marca__texto">
+        <span class="marca__nombre">APA La Plata</span>
+        <span class="marca__lugar">Asociación Protectora de Animales</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-principal">
+      <svg class="nav-toggle__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="4" y1="7" x2="20" y2="7"></line>
+        <line x1="4" y1="12" x2="20" y2="12"></line>
+        <line x1="4" y1="17" x2="20" y2="17"></line>
+      </svg>
+      Menú
+    </button>
+
+    <nav class="nav-principal" id="nav-principal" aria-label="Navegación principal">
+      <ul class="nav-principal__lista">
+        <li><a class="nav-principal__enlace" href="index.html" aria-current="page">Inicio</a></li>
+        <li><a class="nav-principal__enlace" href="adopcion.html">Adoptar</a></li>
+        <li><a class="nav-principal__enlace" href="index.html#sobre">Sobre APA</a></li>
+        <li><a class="nav-principal__enlace" href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="nav-principal__redes">
+        <a class="icono-red" href="https://www.instagram.com/apa.perritosenadopcion/" target="_blank" rel="noopener" aria-label="APA La Plata en Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle></svg>
+        </a>
+        <a class="icono-red" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="APA La Plata en Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9.6V11h2.7l-.4 3H14v7h-3v-7H8.5v-3H11V9.4C11 7 12.6 6 14.7 6H17v3h-2.4c-.4 0-.6.2-.6.6z"></path></svg>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HeroInicio: franja de fotos a pantalla casi completa -->
+  <section class="hero-full">
+    <div class="hero-full__panel hero-full__panel--texto reveal">
+      <p class="hero-full__kicker">Refugio en La Plata desde 1982</p>
+      <h1 class="hero-full__titulo">Cada perro rescatado merece un hogar de verdad.</h1>
+      <div class="hero-full__acciones">
+        <a href="adopcion.html" class="btn btn-primario">Quiero adoptar</a>
+        <a href="contacto.html" class="btn btn-secundario">Cómo colaborar</a>
+      </div>
+    </div>
+    <div class="hero-full__panel">
+      <img src="img/perros/pancho-1.jpg" alt="Pancho, uno de los perros en adopción en APA La Plata" loading="lazy">
+    </div>
+    <div class="hero-full__panel">
+      <img src="img/perros/india.jpg" alt="India, una de las perras en adopción en APA La Plata" loading="lazy">
+    </div>
+    <div class="hero-full__panel">
+      <img src="img/perros/rufus.jpg" alt="Rufus, uno de los perros en adopción en APA La Plata" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Sección: Sobre APA (institucional) -->
+  <section id="sobre" class="contenedor seccion-sobre">
+    <div class="huellas-decorativas" aria-hidden="true">
+      <svg class="huellas-decorativas__pata" style="top:0%; right:8%; width:2.75rem; transform:rotate(-14deg);" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/></svg>
+      <svg class="huellas-decorativas__pata" style="top:14%; right:22%; width:1.75rem; transform:rotate(10deg);" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/></svg>
+      <svg class="huellas-decorativas__pata" style="top:32%; right:5%; width:3.25rem; transform:rotate(18deg);" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/></svg>
+      <svg class="huellas-decorativas__pata" style="top:50%; right:26%; width:2rem; transform:rotate(-20deg);" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/></svg>
+      <svg class="huellas-decorativas__pata" style="top:66%; right:10%; width:2.5rem; transform:rotate(6deg);" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/></svg>
+      <svg class="huellas-decorativas__pata" style="top:82%; right:28%; width:1.5rem; transform:rotate(-8deg);" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/></svg>
+      <svg class="huellas-decorativas__pata" style="top:95%; right:14%; width:2.25rem; transform:rotate(15deg);" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/></svg>
+    </div>
+    <div class="seccion__encabezado reveal">
+      <p class="seccion__kicker">Sobre la organización</p>
+      <h2>Quiénes somos</h2>
+    </div>
+    <div class="texto-institucional reveal">
+      <p>APA La Plata (Asociación Protectora de Animales de La Plata) es una asociación civil sin fines de lucro fundada en 1982, dedicada al rescate, cuidado y reubicación de perros en situación de calle, abandono o maltrato en la ciudad de La Plata.</p>
+      <p>Sostenemos un refugio propio donde conviven decenas de perros a la espera de adopción, cerca de la Selva Marginal de Punta Lara. El trabajo es realizado por un grupo reducido de voluntarios y se financia con aportes de socios y donaciones: no recibimos ayuda estatal, desde 1982.</p>
+    </div>
+  </section>
+
+  <!-- Sección: Nuestra misión (cita destacada, organismo propio) -->
+  <section class="contenedor">
+    <div class="mision-seccion reveal">
+      <svg class="mision-seccion__comilla" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M7 7c-2.2 0-4 1.8-4 4v6h6v-6H6c0-1.1.9-2 2-2V7zm10 0c-2.2 0-4 1.8-4 4v6h6v-6h-3c0-1.1.9-2 2-2V7z"/>
+      </svg>
+      <p class="seccion__kicker">Nuestra misión</p>
+      <p class="mision-seccion__cita">Que ningún perro que pase por nuestras manos vuelva a la calle, y que cada adopción sea responsable y para toda la vida.</p>
+    </div>
+  </section>
+
+  <!-- Sección: Galería (CarruselFotos panorámico a todo el ancho, con
+       leyenda por foto). Es, junto con HeroInicio, el único organismo que
+       excede el ancho de lectura: el encabezado queda en .contenedor pero
+       el carrusel ocupa el ancho completo del viewport. -->
+  <section>
+    <div class="contenedor">
+      <div class="seccion__encabezado reveal">
+        <p class="seccion__kicker">Así vivimos</p>
+        <h2>Galería del refugio</h2>
+      </div>
+    </div>
+    <div class="carrusel-fotos carrusel-fotos--ancho carrusel-fotos--completo reveal" aria-label="Fotos del refugio y sus perros" aria-roledescription="carrusel">
+      <div class="carrusel-fotos__viewport">
+        <ul class="carrusel-fotos__pista" id="carrusel-pista">
+          <li class="carrusel-fotos__slide">
+            <img src="img/perros/pancho-2.jpg" alt="Pancho corriendo y jugando en el patio del refugio" loading="lazy">
+            <span class="carrusel-fotos__caption">Pancho</span>
+          </li>
+          <li class="carrusel-fotos__slide">
+            <img src="img/perros/india.jpg" alt="India, perra color canela con arnés rosa" loading="lazy">
+            <span class="carrusel-fotos__caption">India</span>
+          </li>
+          <li class="carrusel-fotos__slide">
+            <img src="img/perros/rufus.jpg" alt="Rufus asomado en la puerta de su caseta" loading="lazy">
+            <span class="carrusel-fotos__caption">Rufus</span>
+          </li>
+          <li class="carrusel-fotos__slide">
+            <img src="img/perros/pancho-3.jpg" alt="Pancho junto al alambrado del refugio" loading="lazy">
+            <span class="carrusel-fotos__caption">Pancho</span>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="carrusel-fotos__control carrusel-fotos__control--prev" data-carrusel-prev aria-label="Foto anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg>
+      </button>
+      <button type="button" class="carrusel-fotos__control carrusel-fotos__control--next" data-carrusel-next aria-label="Foto siguiente">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+      </button>
+      <div class="carrusel-fotos__dots" role="tablist" aria-label="Seleccionar foto">
+        <button type="button" class="carrusel-fotos__dot" data-carrusel-dot="0" aria-label="Foto 1" aria-current="true"></button>
+        <button type="button" class="carrusel-fotos__dot" data-carrusel-dot="1" aria-label="Foto 2"></button>
+        <button type="button" class="carrusel-fotos__dot" data-carrusel-dot="2" aria-label="Foto 3"></button>
+        <button type="button" class="carrusel-fotos__dot" data-carrusel-dot="3" aria-label="Foto 4"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Perros destacados (reutiliza TarjetaAnimal en contenedores más anchos) -->
+  <section class="contenedor">
+    <div class="seccion__encabezado reveal">
+      <p class="seccion__kicker">Buscan familia</p>
+      <h2>Algunos de nuestros rescatados</h2>
+      <p>Estos son solo algunos de los perros que esperan en el refugio. Conocé el catálogo completo y filtralo por tamaño y edad.</p>
+    </div>
+
+    <div class="grilla-destacados">
+      <article class="tarjeta-animal reveal">
+        <div class="tarjeta-animal__layout">
+          <div class="tarjeta-animal__imagen-envoltorio">
+            <div class="imagen-animal">
+              <img src="img/perros/pancho-1.jpg" alt="Pancho, perro tricolor de orejas largas, mirando a cámara">
+            </div>
+          </div>
+          <div class="tarjeta-animal__contenido">
+            <div class="tarjeta-animal__encabezado">
+              <h3 class="tarjeta-animal__nombre">Pancho</h3>
+              <span class="etiqueta-estado etiqueta-estado_disponible">Disponible</span>
+            </div>
+            <ul class="tarjeta-animal__meta">
+              <li>Adulto</li>
+              <li>Mediano</li>
+            </ul>
+            <p class="tarjeta-animal__descripcion">Rescatado de la calle, hoy vive en el refugio a la espera de una familia. Sociable, activo y muy paseador.</p>
+            <div class="tarjeta-animal__acciones">
+              <a href="animal.html" class="btn btn-primario">Quiero adoptar</a>
+              <a href="animal.html" class="btn btn-secundario">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tarjeta-animal reveal reveal--retraso-1">
+        <div class="tarjeta-animal__layout">
+          <div class="tarjeta-animal__imagen-envoltorio">
+            <div class="imagen-animal imagen-animal--paleta-2">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a2.5 2.5 0 0 1 2.5 2.5A2.5 2.5 0 0 1 12 7a2.5 2.5 0 0 1-2.5-2.5A2.5 2.5 0 0 1 12 2zM7 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM17 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM12 13c3 0 6 2.2 6 5.2 0 1.8-1.6 2.8-3.4 2.1a4.8 4.8 0 0 0-5.2 0C7.6 21 6 20 6 18.2 6 15.2 9 13 12 13z"/></svg>
+            </div>
+          </div>
+          <div class="tarjeta-animal__contenido">
+            <div class="tarjeta-animal__encabezado">
+              <h3 class="tarjeta-animal__nombre">Luna</h3>
+              <span class="etiqueta-estado etiqueta-estado_disponible">Disponible</span>
+            </div>
+            <ul class="tarjeta-animal__meta">
+              <li>Cachorra (6 meses aprox.)</li>
+              <li>Mediana</li>
+            </ul>
+            <p class="tarjeta-animal__descripcion">Juguetona y curiosa, se lleva bien con otros perros. Necesita una familia con tiempo para su energía.</p>
+            <div class="tarjeta-animal__acciones">
+              <a href="animal.html" class="btn btn-primario">Quiero adoptar</a>
+              <a href="animal.html" class="btn btn-secundario">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p style="margin-top: var(--espacio-md); text-align:center;">
+      <a href="adopcion.html" class="btn btn-secundario">Ver catálogo completo de adopción</a>
+    </p>
+  </section>
+
+  <!-- Sección: Cómo adoptar (SeccionProceso) -->
+  <section class="contenedor">
+    <div class="seccion__encabezado reveal">
+      <p class="seccion__kicker">Proceso</p>
+      <h2>Cómo adoptar</h2>
+      <p>La adopción es responsable y gratuita. Estos son los pasos que seguimos con cada familia.</p>
+    </div>
+    <ol class="pasos">
+      <li class="pasos__item pasos__item--mostaza reveal">
+        <h3 class="pasos__titulo">Elegí</h3>
+        <p class="pasos__texto">Mirá el catálogo de perros disponibles y encontrá el que mejor se adapte a tu casa y tu rutina.</p>
+      </li>
+      <li class="pasos__item pasos__item--verde reveal reveal--retraso-1">
+        <h3 class="pasos__titulo">Conversemos</h3>
+        <p class="pasos__texto">Nos contactamos para conocer tu situación: espacio, otros animales, experiencia previa.</p>
+      </li>
+      <li class="pasos__item pasos__item--tostado reveal reveal--retraso-2">
+        <h3 class="pasos__titulo">Visita</h3>
+        <p class="pasos__texto">Coordinamos una visita al refugio o a tu casa para asegurarnos de que sea un buen lugar.</p>
+      </li>
+      <li class="pasos__item pasos__item--mostaza reveal reveal--retraso-3">
+        <h3 class="pasos__titulo">Adopción</h3>
+        <p class="pasos__texto">Firmamos el compromiso de adopción responsable y hacemos seguimiento las primeras semanas.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Sección: Nuestro impacto (DatoInstitucional + foto) -->
+  <section class="contenedor">
+    <div class="grid-dos-columnas">
+      <div class="imagen-animal">
+        <img src="img/perros/india.jpg" alt="India, una de las perras rescatadas por APA La Plata" loading="lazy">
+      </div>
+      <div class="reveal">
+        <p class="seccion__kicker">Nuestro impacto</p>
+        <h2>Una forma más tranquila de ayudar</h2>
+        <p>Hace más de 40 años que trabajamos para que cada perro rescatado encuentre un hogar responsable y no vuelva a la calle.</p>
+        <div class="grilla-datos">
+          <div class="dato-institucional">
+            <span class="dato-institucional__numero">43</span>
+            <span class="dato-institucional__etiqueta">años de trabajo ininterrumpido</span>
+          </div>
+          <div class="dato-institucional">
+            <span class="dato-institucional__numero">+900</span>
+            <span class="dato-institucional__etiqueta">perros con hogar</span>
+          </div>
+          <div class="dato-institucional">
+            <span class="dato-institucional__numero">0</span>
+            <span class="dato-institucional__etiqueta">ayuda estatal recibida</span>
+          </div>
+          <div class="dato-institucional">
+            <span class="dato-institucional__numero">100%</span>
+            <span class="dato-institucional__etiqueta">a pulmón de socios y voluntarios</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Cómo colaborar -->
+  <section class="contenedor">
+    <div class="seccion__encabezado reveal">
+      <p class="seccion__kicker">Sumate</p>
+      <h2>Cómo colaborar</h2>
+    </div>
+    <div class="grid-dos-columnas">
+      <article class="colaborar-tarjeta reveal">
+        <h3>Hacete socio</h3>
+        <p>Un aporte mensual, del monto que puedas, para sostener la comida, la atención veterinaria y el mantenimiento del refugio.</p>
+        <ul class="lista-simple">
+          <li>Vos elegís el monto</li>
+          <li>Lo podés dar de baja cuando quieras</li>
+          <li>Coordinamos el medio de pago por mensaje</li>
+        </ul>
+        <a href="contacto.html" class="btn btn-primario">Quiero ser socio</a>
+      </article>
+      <article class="colaborar-tarjeta reveal reveal--retraso-1">
+        <h3>Doná</h3>
+        <p>Podés donar en insumos o en dinero, sin monto mínimo.</p>
+        <ul class="lista-simple">
+          <li>Alimento balanceado para adultos y cachorros</li>
+          <li>Elementos de limpieza y desinfección</li>
+          <li>Insumos veterinarios (vendas, jeringas, antiparasitarios)</li>
+          <li>Dinero en efectivo o transferencia</li>
+        </ul>
+        <p class="colaborar-tarjeta__nota">Los insumos se entregan en el refugio. Para donar dinero, coordinamos el medio por mensaje.</p>
+        <a href="contacto.html" class="btn btn-secundario">Consultar cómo donar</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sección: CTA final (banner grande, cierre de la home) -->
+  <section class="cta-final">
+    <div class="contenedor cta-final__grid">
+      <div class="reveal">
+        <p class="seccion__kicker" style="color: var(--color-primario);">Seguinos</p>
+        <h2>Novedades del refugio, todos los días</h2>
+        <p>En Instagram publicamos los perros que llegan, los que encuentran hogar, y el día a día del refugio.</p>
+        <a href="https://www.instagram.com/apa.perritosenadopcion/" target="_blank" rel="noopener" class="btn btn-secundario">Seguir en Instagram</a>
+      </div>
+      <div class="imagen-animal cta-final__foto">
+        <img src="img/perros/pancho-3.jpg" alt="Pancho junto al alambrado del refugio" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie-pagina">
+  <div class="contenedor">
+    <div class="pie-pagina__grid">
+      <div>
+        <h2 class="pie-pagina__titulo">APA La Plata</h2>
+        <p>Asociación civil sin fines de lucro. Refugio de perros en La Plata, cerca de la Selva Marginal de Punta Lara. Desde 1982, sin ayuda estatal.</p>
+      </div>
+      <div>
+        <h2 class="pie-pagina__titulo">Navegación</h2>
+        <ul class="pie-pagina__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="adopcion.html">Adoptar</a></li>
+          <li><a href="index.html#sobre">Sobre APA</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="sistema.html">Documentación del sistema de diseño</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="pie-pagina__titulo">Seguinos</h2>
+        <p>Publicamos perros en adopción y novedades del refugio todos los días.</p>
+        <div class="pie-pagina__redes">
+          <a class="icono-red" href="https://www.instagram.com/apa.perritosenadopcion/" target="_blank" rel="noopener" aria-label="APA La Plata en Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle></svg>
+          </a>
+          <a class="icono-red" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="APA La Plata en Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9.6V11h2.7l-.4 3H14v7h-3v-7H8.5v-3H11V9.4C11 7 12.6 6 14.7 6H17v3h-2.4c-.4 0-.6.2-.6.6z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="pie-pagina__base">
+      <span>© 2026 APA La Plata. Asociación civil sin fines de lucro, desde 1982.</span>
+      <span>Sitio desarrollado como Trabajo Práctico Final — Guadalupe Holsman.</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
